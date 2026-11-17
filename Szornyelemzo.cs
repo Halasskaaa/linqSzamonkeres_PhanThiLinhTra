@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ZstdSharp.Unsafe;
 
 namespace linqSzamonkeres_PhanThiLinhTra
 {
     internal class Szornyelemzo
     {
-        private List<Szorny> szornyek;
 
-        public Szornyelemzo(List<Szorny> szornyek)
+        SzornyAdatbazis db = new SzornyAdatbazis();
+
+        List<Szorny> szornyek = db.Feltolt();
+
+
+        public int OsszesSzornySzama()
         {
-            this.szornyek = szornyek;
+            var eredmeny = szornyek
+                .Count();
+
+            return eredmeny;
         }
 
-        //public int OsszesSzornySzama()
-        //{
-        //    szornyek<Szorny> results = 
-        //}
+
+
     }
 }

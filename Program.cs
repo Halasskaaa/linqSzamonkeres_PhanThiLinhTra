@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            SzornyAdatbazis db = new SzornyAdatbazis();
+
+            List<Szorny> szornek = db.Feltolt();
+
+            
+
         }
     }
 }
