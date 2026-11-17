@@ -32,11 +32,15 @@ namespace linqSzamonkeres_PhanThiLinhTra
 
         //    foreach (var adat in eredmeny)
         //    {
-        //        Console.WriteLine($"Állat neve: {adat.Nev}; Veszélyességi szintje: {adat.VeszelyessegiSzint}");
+        //        Console.WriteLine($"Szörny neve: {adat.Nev}; Veszélyességi szintje: {adat.VeszelyessegiSzint}");
         //    }
         //}
 
+        //public IEnumerable<string> EgyediELohelyek()
+        //{
+        //    var eredmeny = szornyek.Where(n => n.Elohely)
 
+        //}
 
     }
 }
